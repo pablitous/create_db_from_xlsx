@@ -69,21 +69,4 @@ for sheet in wb_db.sheets:
                         )ON [PRIMARY]\n
                         GO\n""")
 
-    text_file.close()       
-
-
-# CREATE TABLE [dbo].[sasd](
-# 	[MANDT] [nvarchar](3) NOT NULL,
-# 	[BUKRS] [nvarchar](4) NOT NULL,
-#  CONSTRAINT [PK_sasd] PRIMARY KEY CLUSTERED 
-# (
-# 	[MANDT] ASC
-# )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-# ) ON [PRIMARY]
-# GO
-
-# ALTER TABLE [dbo].[sasd] ADD  CONSTRAINT [DF_sasd_MANDT]  DEFAULT ('000') FOR [MANDT]
-# GO
-
-# ALTER TABLE [dbo].[sasd] ADD  CONSTRAINT [DF_sasd_BUKRS]  DEFAULT ('') FOR [BUKRS]
-# GO
+    text_file.close()
